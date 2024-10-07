@@ -4,16 +4,6 @@
 
 /* index.css */
 
-.glow {
-    width: 100%;
-    height: 100%;
-    background-image: url('/glow.png');
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: glowAnimation 1s infinite alternate;
-}
 
 @keyframes glowAnimation {
     0% {
@@ -46,7 +36,7 @@
 .multiplier-bar {
     position: relative;
     width: 0.5rem; /* Adjust the width as necessary */
-    height: 10rem; /* Set the height for the multiplier bar */
+    height: 17rem; /* Set the height for the multiplier bar */
     background-color: #374151; /* Gray color for the empty portion of the bar */
     border-radius: 0.25rem; /* Rounded corners */
     overflow: hidden; /* Ensure child elements don't overflow */
@@ -61,5 +51,7 @@
 }
 
 /* Other existing styles can remain unchanged */
+
+  
 
   
