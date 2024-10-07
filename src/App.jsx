@@ -191,6 +191,8 @@ const DragonTowerGame = () => {
 <div className="absolute right-10 bottom-10 flex flex-col items-center">
     {/* Displaying Multiplier Values */}
     <div className="flex flex-col items-center">
+        <div className="jackpot"><img src="/jackpot.png" width={50} alt="" srcset="" />
+        </div>
         <span className="text-lg">Multiplier: {multiplier}x</span>
         <div className="multiplier-bar">
             <div
@@ -205,7 +207,7 @@ const DragonTowerGame = () => {
                     {gameOver && (
                         <div className="absolute bottom-0 left-0 right-0 p-4 text-center bg-black bg-opacity-80">
                             <h2 className="text-xl font-bold">Game Over!</h2>
-                            <p className="text-lg">Total Reward: {reward}*</p>
+                            <p className="text-lg">Total Reward: {reward}</p>
                             <button onClick={restartGame} className="bg-red-500 text-white py-2 px-4 rounded">Restart</button>
                         </div>
                     )}
