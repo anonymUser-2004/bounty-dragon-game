@@ -110,7 +110,7 @@ const DragonTowerGame = () => {
     return (
         <>
             <Navbar />
-            <div className="flex px-14 items-center justify-center h-screen bg-[url('bg.jpg')] text-white">
+            <div className="flex px-14 items-center justify-center h-screen bg-[url('/bg.jpg')] text-white">
                 {/* Sidebar */}
                 <div className="p-4 bg-opacity-90 bg-black rounded-md h-[90%] flex flex-col items-center relative">
                     <div className="type-bet flex justify-center items-center gap-3">
