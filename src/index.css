@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css */
+
+.glow {
+    width: 100%;
+    height: 100%;
+    background-image: url('/glow.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: glowAnimation 1s infinite alternate;
+}
+
+@keyframes glowAnimation {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes glow {
+    0% {
+        opacity: 0.6;
+        filter: brightness(1);
+    }
+    100% {
+        opacity: 1;
+        filter: brightness(1.5);
+    }
+}
+
+.transition {
+    transition: height 0.3s ease;
+  }
+  
+
+.glow {
+    animation: glow 1.5s infinite alternate;
+}
+/* Multiplier Bar styles */
+.multiplier-bar {
+    position: relative;
+    width: 0.5rem; /* Adjust the width as necessary */
+    height: 10rem; /* Set the height for the multiplier bar */
+    background-color: #374151; /* Gray color for the empty portion of the bar */
+    border-radius: 0.25rem; /* Rounded corners */
+    overflow: hidden; /* Ensure child elements don't overflow */
+}
+
+.multiplier-fill {
+    position: absolute;
+    bottom: 0; /* Positioning to start from the bottom */
+    width: 100%; /* Full width */
+    background-color: #34D399; /* Green color for the filled portion of the bar */
+    transition: height 0.3s ease; /* Smooth height transition */
+}
+
+/* Other existing styles can remain unchanged */
+
+  
